@@ -4,7 +4,8 @@
   "description": "Nociones basicas para usar web pack",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack index.js -o bundle.js"
   },
   "keywords": [
     "webpack",
