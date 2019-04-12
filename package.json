@@ -10,6 +10,7 @@
     "build:css": "webpack --config ./css-style-loader/webpack.config.js",
     "build:extract:css": "webpack --config ./plugin-extract-text/webpack.config.js",
     "build:multi": "webpack --config ./multiples-entry-points/webpack.config.js",
+    "build:dev": "webpack-dev-server --config ./webpack-dev-server/webpack.config.js",
     "build": "webpack index.js -o bundle.js"
   },
   "keywords": [
@@ -23,6 +24,7 @@
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.30.0",
-    "webpack-cli": "^3.3.0"
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1"
   }
 }
