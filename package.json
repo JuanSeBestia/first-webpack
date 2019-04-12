@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack index.js -o bundle.js",
+    
     "build:local": "webpack",
-    "build:external": "webpack --config ./external/webpack.config.js"
+    "build:external": "webpack --config ./external/webpack.config.js",
+    "build:css": "webpack --config ./css-style-loader/webpack.config.js",
+    "build": "webpack index.js -o bundle.js"
   },
   "keywords": [
     "webpack",
@@ -16,6 +18,8 @@
   "author": "JuanSeBestia",
   "license": "MIT",
   "devDependencies": {
+    "css-loader": "^2.1.1",
+    "style-loader": "^0.23.1",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.0"
   }
